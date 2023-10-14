@@ -1,0 +1,25 @@
+app-id: io.github.starnight.http
+runtime: org.gnome.Platform
+runtime-version: '45'
+sdk: org.gnome.Sdk
+command: main.py
+
+finish-args:
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+
+cleanup-commands:
+  - rm -rf /app/bin/__pycache__
+  - rm -rf /app/lib/python3.11/site-packages/webview/lib/runtimes/win-*
+
+modules:
+  - python3-requirements.json
+
+  - name: http
+    buildsystem: simple
+    build-commands:
+      - install -D main.py /app/bin/main.py
+    sources:
+      - type: file
+        path: src/main.py
