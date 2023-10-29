@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=flatpak-http
+Exec=main.py
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+# TRANSLATORS: Do NOT translate or transliterate this text!
+#              This is an icon file name.
+Icon=io.github.starnight.http

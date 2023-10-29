@@ -20,6 +20,10 @@ modules:
     buildsystem: simple
     build-commands:
       - install -D main.py /app/bin/main.py
+      - mkdir -p /app/share/applications
+      - install -D io.github.starnight.http.desktop /app/share/applications/io.github.starnight.http.desktop
+      - mkdir -p /app/share/icons/hicolor/scalable/apps
+      - install -D assets/http-svgrepo-com.svg /app/share/icons/hicolor/scalable/apps/io.github.starnight.http.svg
     sources:
-      - type: file
-        path: src/main.py
+      - type: dir
+        path: src
