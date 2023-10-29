@@ -36,6 +36,7 @@ jobs:
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: build-aux/flatpak
         run: |
           /app/flatpak-external-data-checker --update --verbose --never-fork \
             io.github.starnight.http.yml

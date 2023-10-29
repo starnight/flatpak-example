@@ -26,4 +26,4 @@ modules:
       - install -D assets/http-svgrepo-com.svg /app/share/icons/hicolor/scalable/apps/io.github.starnight.http.svg
     sources:
       - type: dir
-        path: src
+        path: ../../src

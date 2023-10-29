@@ -23,7 +23,7 @@ jobs:
       - name: Build Flatpak bundle
         uses: flatpak/flatpak-github-actions/flatpak-builder@v6.1
         with:
-          bundle: io.github.starnight.http.yml
-          manifest-path: io.github.starnight.http.yml
+          bundle: io.github.starnight.http.flatpak
+          manifest-path: build-aux/flatpak/io.github.starnight.http.yml
           cache: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
           cache-key: flatpak-builder-${{ github.sha }}
