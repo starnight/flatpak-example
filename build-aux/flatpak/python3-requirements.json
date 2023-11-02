@@ -25,8 +25,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a5/16/a42a05fbf39a5f285f28f496a63b0bc7f6276b41d07caa4366e057b20d1b/pywebview-4.4-py3-none-any.whl",
-            "sha256": "32b3d4481f79fa434db4a9055a2f705636055924a5389a6763994a88064dd59e",
+            "url": "https://files.pythonhosted.org/packages/94/eb/fec1105c0e3b459266637bdc867bd064619eddb170dc0c9d12f20ad7690c/pywebview-4.4.1-py3-none-any.whl",
+            "sha256": "575b1362953349104b6ec08eed115c5a51d0d8b8e029b35335458cfa759ced1b",
             "x-checker-data": {
                 "type": "pypi",
                 "name": "pywebview",
