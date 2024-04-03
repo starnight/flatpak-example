@@ -36,9 +36,9 @@ $ pip install requirements-parser
    ```
    git clone https://github.com/starnight/flatpak-example-pywebview
    ```
-2. Install SDK.  The flatpak-example-pywebview uses GNOME 45 runtime now:
+2. Install SDK.  The flatpak-example-pywebview uses GNOME 46 runtime now:
    ```
-   flatpak install flathub org.gnome.Sdk//45
+   flatpak install flathub org.gnome.Sdk//46
    ```
 3. Use **flatpak-pip-generator** to generate `python3-requirements.json`, which lists dependencies as a module in the manifest `io.github.starnight.http.yml`:
    ```
@@ -102,13 +102,12 @@ $ pip install requirements-parser
      Collection:
    Installation: user
       Installed: 2.0 MB
-        Runtime: org.gnome.Platform/x86_64/45
-            Sdk: org.gnome.Sdk/x86_64/45
+        Runtime: org.gnome.Platform/x86_64/46
+            Sdk: org.gnome.Sdk/x86_64/46
 
-         Commit: 61171a2702e63df512a97b5fe527f54a348cca07a4aac61a18746c2984c85458
-         Parent: c62a8fd3816cfe0dcbfb249934a8389ee5024cfffee6b04db29df3ef5cf82bdd
+         Commit: ca09edd93f65d056abbfaa999efbf5ab2913abe1015bff8bdd85d04519a0fdef
         Subject: Export io.github.starnight.http
-           Date: 2023-10-29 15:58:08 +0000
+           Date: 2024-04-03 15:23:40 +0000
    ```
 
 

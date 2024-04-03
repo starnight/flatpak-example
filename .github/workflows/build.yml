@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: bilelmoussaoui/flatpak-github-actions:gnome-45
+      image: bilelmoussaoui/flatpak-github-actions:gnome-46
       options: --privileged
 
     steps:
@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Flatpak bundle
-        uses: flatpak/flatpak-github-actions/flatpak-builder@v6.1
+        uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle: io.github.starnight.http.flatpak
           manifest-path: build-aux/flatpak/io.github.starnight.http.yml
