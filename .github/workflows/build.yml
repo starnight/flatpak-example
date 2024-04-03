@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: bilelmoussaoui/flatpak-github-actions:gnome-45
+      image: bilelmoussaoui/flatpak-github-actions:gnome-46
       options: --privileged
 
     steps:
